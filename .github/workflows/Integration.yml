@@ -23,6 +23,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: yarn
-    - run: yarn pre-deploy
-    - run: yarn deploy
+    - run: npm
+    - run: npm predeploy
+    - run: npm deploy
